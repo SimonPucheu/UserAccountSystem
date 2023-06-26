@@ -70,6 +70,13 @@ CREATE TABLE `oauth_clients` (
   `user_id` varchar(80) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `oauth_clients`
+--
+
+INSERT INTO `oauth_clients` (`client_id`, `client_secret`, `client_name`, `client_icon`, `redirect_uri`, `grant_types`, `scope`, `user_id`) VALUES
+('sandbox', 'password', 'Sandbox', NULL, 'http://localhost/sandbox/authorize.php', NULL, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
